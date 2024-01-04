@@ -8,23 +8,19 @@
     
 
 body {
-    background-color: #8A51FC;
-}
-
-.logo-main {
-    width: 300px;
-    height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    background-image: url(assets/financas.png);
+    background-size: cover;
 }
 
 main {
     width: 375px;
     border-radius: 20px;
     background-color: #f4f4f4;
-    margin: 0 auto 40px;
+    margin:auto;
     padding: 44px 24px 23px;
+    display: block;
+    margin-top:300px;
+    margin-bottom:auto;
 }
 
 
@@ -53,7 +49,7 @@ select,input{
 
 button{
     border-radius: 5px;
-    background: #772FD3;
+    background: #4169E1;
     width: 327px;
     height: 48px;
     color:#ffffff;
@@ -75,7 +71,7 @@ button:active{
 
 section{
     border-radius: 20px;
-    border: 1px solid #772FD3;
+    border: 1px solid #4169E1	;
     width: 327px;
     height: 300px;
     margin-top:36px;
@@ -87,6 +83,8 @@ section{
 
 .arrow{
     margin:15px 0;
+    width: 50px;
+    height: 50px;
 }
 
 .currency{
