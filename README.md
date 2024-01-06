@@ -18,6 +18,6 @@ In it i could praticed:
 - Create Variables; <br>
 - Create Functions;<br>
 - use the InnerHtml to change texts;<br>
-- Do the trade of "src" of images;<br>
-- To Map inputs and buttons usying the "queryselector" and the "getelementById";<br>
-- To format numbers usying the "new Intl.formatnumber({style: currency:}).format() tool.
+- To Do the trade of "src" of images;<br>
+- Map inputs and buttons usying the "queryselector" and the "getelementById";<br>
+- format numbers usying the "new Intl.formatnumber({style: currency:}).format() tool.
