@@ -16,8 +16,8 @@ This is my First project usying Javascript.
 In it i could praticed:
 
 - Create Variables; <br>
--Create Functions;<br>
--use the InnerHtml to change texts;<br>
--Do the trade of "src" of images;<br>
--To Map inputs and buttons usying the "queryselector" and the "getelementById";<br>
--To format numbers usying the "new Intl.formatnumber({style: currency:}).format() tool.
+- Create Functions;<br>
+- use the InnerHtml to change texts;<br>
+- Do the trade of "src" of images;<br>
+- To Map inputs and buttons usying the "queryselector" and the "getelementById";<br>
+- To format numbers usying the "new Intl.formatnumber({style: currency:}).format() tool.
