@@ -1,3 +1,8 @@
+<img src="./assets/mockup - currency values.jpg">
+<div align="center"><h1>Conversor de Moedas</h1></div>
+
+## 📝 Sobre
+
 Este é meu primeiro projeto usando Javascript.
 
 Nele pude praticar o seguinte:
@@ -10,7 +15,6 @@ Nele pude praticar o seguinte:
 -formatar números utilizando a ferramenta " new InTL.FormatNumber({style: currency:}).format() 
 
 
-In English:
 This is my First project usying Javascript.
 
 In it i could praticed:
@@ -21,3 +25,9 @@ In it i could praticed:
 - To Do the trade of "src" of images;<br>
 - Map inputs and buttons usying the "queryselector" and the "getelementById";<br>
 - format numbers usying the "new Intl.formatnumber({style: currency:}).format() tool.
+
+## 🖥 Tecnologias
+Neste Projeto Foram utilizados Html, Css e Javascript.
+
+
+In this project were used Html, Css and Javascript.

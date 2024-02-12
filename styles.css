@@ -13,13 +13,13 @@ body {
 }
 
 main {
-    width: 375px;
+    width: 320px;
     border-radius: 20px;
     background-color: #f4f4f4;
     margin:auto;
     padding: 44px 24px 23px;
     display: block;
-    margin-top:300px;
+    margin-top:70px;
     margin-bottom:auto;
 }
 
@@ -34,11 +34,12 @@ label {
 
 
 select,input{
+    align-items: center;
     border-radius: 4px;
     border: 1px solid #BBB;
     background: #FFF;
-    width: 327px;
-    height: 48px;
+    width: 280px;
+    height: 35px;
     font-size: 16px;
     font-weight: 700;
     line-height: 18px; /* 112.5% */
@@ -50,8 +51,8 @@ select,input{
 button{
     border-radius: 5px;
     background: #4169E1;
-    width: 327px;
-    height: 48px;
+    width: 280px;
+    height: 38px;
     color:#ffffff;
     font-size: 18px;
     font-weight: 700;
@@ -72,7 +73,7 @@ button:active{
 section{
     border-radius: 20px;
     border: 1px solid #4169E1	;
-    width: 327px;
+    width: 280px;
     height: 300px;
     margin-top:36px;
     padding: 12px;
@@ -107,3 +108,124 @@ font-size: 14px;
 font-weight: 400;
 line-height: 18px;
 }
+
+
+.footer{
+    padding: 1.0rem;
+    background-color: #f4f4f4;   
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;    
+}
+
+.link-contact{
+    color:#4169E1;
+}
+
+.link-contact:link{
+    text-decoration: underline;
+}
+.link-contact:hover{
+    opacity: 0.5;
+}
+.link-contact:active{
+    opacity: 0.7;
+}
+
+
+/* media para SMARTPHONE */
+@media (max-width:428px){
+        main{ margin-top: 10px;
+        width:300px;
+        height: 570px;}
+        
+        select,input{
+            width: 250px;
+            height: 35px;
+            font-size: 10px;
+            font-weight: 600;}    
+
+        button{
+            width: 250px;
+            height: 35px;
+            font-size: 15px;
+            margin-top: 1px;}
+
+        section{
+            padding: 0.3rem;
+            width: 250px;
+            height: 200px;}
+
+        .logo-currency-main{
+            width:30px;
+            height:30px;}
+
+        #currency-name-main{
+            font-size: 8px;}
+
+        .currency-to-convert{
+            font-size: 8px;}
+        
+            .arrow{
+            height: 30px;
+            width: 30px;}
+
+         .img-changed{
+            width: 30px;
+            height: 30px;}
+        
+        .moeda{
+            font-size:8px;}
+
+        .currency-converted{
+            font-size: 8px;}    
+
+
+        .footer{
+            height: 40px;
+            font-size: 8px;}
+        }
+
+
+        /* media para MACBOOK */
+@media (min-width:429px and max-width:1280px){
+    main {
+        width: 250px;
+        height: 600px;
+        margin-top:50px;
+        margin-bottom:auto;}
+ 
+    select,input{
+        width: 200px;
+        height: 20px;
+        font-size: 10px;
+        font-weight: 600;}
+    
+    button{
+        width: 200px;
+        height: 30px;
+        font-size: 15px;}
+    
+    section{
+            border-radius: 20px;
+            border: 1px solid #4169E1	;
+            width: 200px;
+            height: 250px;}
+
+
+    .logo-currency-main{
+        width: 40px;
+        height: 40px;}
+
+    .arrow{
+        height: 30px;
+        width: 30px;}
+
+     .img-changed{
+        width: 40px;
+        height: 40px;
+     }   
+
+    }
