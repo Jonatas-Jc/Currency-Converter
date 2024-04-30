@@ -14,6 +14,8 @@ Nele pude praticar o seguinte:
 -mapear inputs e botões usando o "queryselector" e o "getElementById";<br>
 -formatar números utilizando a ferramenta " new InTL.FormatNumber({style: currency:}).format() 
 
+-Hoje, dia 30/04/2024 adicionei uma API (AWESOMEAPI) onde consigo receber os valores monetários em tempo real.
+
 
 This is my First project usying Javascript.
 
@@ -26,6 +28,7 @@ In it i could praticed:
 - Map inputs and buttons usying the "queryselector" and the "getelementById";<br>
 - format numbers usying the "new Intl.formatnumber({style: currency:}).format() tool.
 
+- Today, 04/30/2024 i add a API ( AWESOMEAPI) where i can recieve monetary values in real time.
 ## 🖥 Tecnologias
 Neste Projeto Foram utilizados Html, Css e Javascript.
 
