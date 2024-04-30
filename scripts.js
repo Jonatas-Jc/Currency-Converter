@@ -4,17 +4,17 @@ const SelectMain = document.querySelector(".select-main")
 const currencyToconvert = document.querySelector(".currency-to-convert")
 const currencyConverted = document.querySelector(".currency-converted")
 
-function convertValues() {
-
+async function convertValues() {
     const currencyvalues = document.querySelector(".input-currency").value
-    
     console.log(Select.value)
     
-    const dolarToday = 4.90
-    const euroToday = 5.38
-    const libraToday = 6.22
-    const bitcoinToday = 210000
-    const realToday = 1
+ const data = await fetch(" https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then(response => response.json())
+
+console.log(data)
+    
+    const dolarToday = data.USDBRL.high;
+    const euroToday = data.EURBRL.high;
+    const bitcoinToday = data.BTCBRL.high;
 
    //configuração do dólar para CADA moeda, a conta precisará ser diferente
     if (Select.value =="dolar" && SelectMain.value=="dolar"){
@@ -22,9 +22,6 @@ function convertValues() {
     
     if (Select.value=="euro" && SelectMain.value=="dolar"){
         currencyConverted.innerHTML = new Intl.NumberFormat("de-DE",{style:"currency", currency:"EUR"}).format(currencyvalues * 0.913)}//valor do input multiplicado pelo valor que cada dolar equivale ao euro
-    
-    if (Select.value=="libra" && SelectMain.value=="dolar"){
-        currencyConverted.innerHTML = new Intl.NumberFormat("en-GB",{style:"currency", currency:"GBP"}).format(currencyvalues * 0.788)}
 
     if (Select.value=="real" && SelectMain.value=="dolar"){
         currencyConverted.innerHTML = new Intl.NumberFormat("pt-BR",{style:"currency", currency:"BRL"}).format(currencyvalues * 0.204)}
@@ -39,32 +36,13 @@ function convertValues() {
     if (Select.value=="dolar" && SelectMain.value=="euro"){
         currencyConverted.innerHTML = new Intl.NumberFormat("de-DE",{style:"currency", currency:"EUR"}).format(currencyvalues*1.094)}
 
-    if (Select.value=="libra" && SelectMain.value=="euro"){
-        currencyConverted.innerHTML = new Intl.NumberFormat("en-GB",{style:"currency", currency:"GBP"}).format(currencyvalues*0.863)}     
-
     if (Select.value=="real" && SelectMain.value=="euro"){
         currencyConverted.innerHTML = new Intl.NumberFormat("pt-BR",{style:"currency", currency:"BRL"}).format(currencyvalues*5.36)}
 
     if (Select.value=="bitcoin" && SelectMain.value=="euro"){
         currencyConverted.innerHTML = new Intl.NumberFormat("de-DE",{style:"currency", currency:"BTC"}).format(currencyvalues*0.000024)}
 
-//configuração da libra para CADA moeda, a conta precisará ser diferente
-    if (Select.value == "libra" && SelectMain.value=="libra"){
-        currencyConverted.innerHTML = new Intl.NumberFormat("en-GB",{style: "currency", currency:"GBP"}).format(currencyvalues)}
-
-    if (Select.value=="dolar" && SelectMain.value=="libra"){
-        currencyConverted.innerHTML = new Intl.NumberFormat("en-US",{style:"currency", currency:"USD"}).format(currencyvalues*1.268)}
-
-    if (Select.value=="euro" && SelectMain.value=="libra"){
-        currencyConverted.innerHTML = new Intl.NumberFormat("de-DE",{style:"currency", currency:"EUR"}).format(currencyvalues*1.158)}
-
-    if (Select.value=="real" && SelectMain.value=="libra"){
-        currencyConverted.innerHTML = new Intl.NumberFormat("pt-BR",{style:"currency", currency:"BRL"}).format(currencyvalues*6.211)}
-
-    if (Select.value=="bitcoin" && SelectMain.value=="libra"){
-        currencyConverted.innerHTML = new Intl.NumberFormat("de-DE",{style:"currency", currency:"BTC"}).format(currencyvalues*0.000028)}
-
-//configuração da libra para CADA moeda, a conta precisará ser diferente    
+//configuração do Bitcoin para CADA moeda, a conta precisará ser diferente    
     if (Select.value =="bitcoin" && SelectMain.value=="bitcoin"){
         currencyConverted.innerHTML = new Intl.NumberFormat("de-DE",{style:"currency", currency:"BTC"}).format(currencyvalues)}
     
@@ -120,11 +98,6 @@ function currencyChange(){
         changedImg.src = "./assets/euro.png" 
     }
 
-    if (Select.value =="libra"){
-        currencyName.innerHTML=("Libra")
-        changedImg.src = "./assets/libra.png" 
-    }
-
     if (Select.value =="bitcoin"){
         currencyName.innerHTML=("Bitcoin")
         changedImg.src = "./assets/bitcoin.png" 
@@ -151,10 +124,6 @@ function selectMain(){
         nameMain.innerHTML=("Euro")
         logoMain.src=("./assets/euro.png")}
     
-    if (SelectMain.value == "libra"){
-        nameMain.innerHTML=("Libra")
-        logoMain.src=("./assets/libra.png")}
-
     if (SelectMain.value =="bitcoin"){
         nameMain.innerHTML=("Bitcoin")
         logoMain.src=("./assets/bitcoin.png")}
